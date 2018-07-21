@@ -1,0 +1,7 @@
+{
+    "defaultSeverity": "error",
+    "extends": "tslint-config-standard",
+    "jsRules": {},
+    "rules": {},
+    "autoFixOnSave": "salimjiba没什么卵用"
+}

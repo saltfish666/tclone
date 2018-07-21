@@ -1,0 +1,35 @@
+{
+  "name": "tclone",
+  "version": "0.0.1",
+  "bin": {
+    "nclone": "./bin/clone.js"
+  },
+  "scripts": {
+    "test": "eslint . && mocha test/",
+    "fix": "eslint --fix .",
+    "cover": "istanbul cover _mocha",
+    "compiler": "tsc ./src/*.ts --watch --outDir ./dist/"
+  },
+  "pre-commit": [],
+  "dependencies": {
+    "ensure-path": "^0.0.1",
+    "octonode": "^0.9.2",
+    "request": "^2.87.0",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.5.2",
+    "cz-conventional-changelog": "^2.1.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.0.0",
+    "pre-commit": "^1.2.2",
+    "tslint": "^5.11.0",
+    "tslint-config-standard": "^7.1.0",
+    "typescript": "^2.9.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
